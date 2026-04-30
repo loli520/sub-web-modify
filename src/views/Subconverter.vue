@@ -252,7 +252,6 @@
         </el-card>
       </el-col>
     </el-row>
-      </div>
     <el-dialog
         :visible.sync="dialogUploadConfigVisible"
         :show-close="false"
