@@ -253,7 +253,6 @@
       </el-col>
     </el-row>
       </div>
-    </el-dialog>
     <el-dialog
         :visible.sync="dialogUploadConfigVisible"
         :show-close="false"
@@ -825,8 +824,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://api.v1.mk" : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
+        customBackend: this.getUrlParam() == "" ? defaultBackend : this.getUrlParam(),
+        shortType: shortUrlBackend,
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
         includeRemarks: "",
